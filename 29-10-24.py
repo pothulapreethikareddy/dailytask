@@ -1,8 +1,8 @@
 #1.Define a function called `greet` that takes a name as an argument and prints a greeting message like: "Hello, [name]!"
 def greet(name):
-    print("Hello,name")
-
-greet("Preethika reddy")
+    return(["Hello,,"+name+"!"])
+name=["preethi"]
+print(greet(" ".join(name)))
 
 #2.Write a function `add_numbers` that takes two numbers as arguments and returns their sum. Test the function by passing different numbers.
 def add(s1, s2):
