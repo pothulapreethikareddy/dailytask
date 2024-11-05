@@ -30,7 +30,7 @@ class Person:
         print("Updated Phone No:", self.phone_no)
  
 p = []
-c=int(input("enter th number of:"))
+c=int(input("enter the number of:"))
 for i in range(c):  
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))
