@@ -1,3 +1,46 @@
+#Encapsualtion: use of access modifiers that control the visibility of class attributes and methods from outside the class. 
+
+#Public: access from outside of the class 
+
+"""class Student:
+def __init__(self, name, age):
+self.name = name
+self.age = age
+
+student = Student("preethikareddy", 25)
+print(student.name) # Accessing public attribute"""
+
+
+#protected: access within the class and subclass(-)
+"""class Animal:
+def __init__(self):
+self._type = "Unknown"
+
+class Dog(Animal):
+def __init__(self):
+super().__init__()
+self._type = "Dog"
+
+dog = Dog()
+print(dog._type) # Accessing protected attribute"""
+
+#private: accesss within the class (--)
+
+"""class BankAccount:
+def __init__(self):
+self.__balance = 0
+
+def deposit(self, amount):
+self.__balance += amount
+
+def get_balance(self):
+return self.__balance
+
+account = BankAccount()
+account.deposit(100)
+print(account.get_balance()) # Accessing private method"""
+
+#Example:
 class Employee:
     def __init__(self, name, age, salary):
         self.__name = name
@@ -54,3 +97,4 @@ std = student("PREETHIKAREDDY", 25, 450)
 print(std.get_student_info())  
 std.promot_nextsection(10)
 print(std.get_student_info())  
+
